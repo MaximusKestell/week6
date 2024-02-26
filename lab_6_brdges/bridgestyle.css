@@ -1,4 +1,6 @@
 #bridge-map {
     height: 500px;
-    width:
+    width: 400px;
+    border: 1px green solid;
+/*   todo set the sizes and colors any other optional styles*/
 }

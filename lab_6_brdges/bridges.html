@@ -4,15 +4,38 @@
     <meta charset="UTF-8">
     <title>Longest Bridges</title>
 
+<!--    including leaflet css and js-->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"></script>
 
+<!--    including chart.js-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<!--    including custom styles-->
     <link rel="stylesheet" href="bridgestyle.css" type="text/css">
-  <script async defer src="bridges_markers.js"></script>
+
+
+
+    <style>
+        .bridge-icon {
+            width: 32px;
+            height: 32px;
+        }
+    </style>
+
+    <script async defer src="bridges_markers.js"></script>
+    <script  defer src="bridgeChart.js"></script>
 </head>
 <body>
 
+<h1>Map of Longest Bridges in the US</h1>
 <div id="bridge-map"></div>
+
+<br>
+
+<h2>Longest US Bridges Chart</h2>
+<canvas id="barChart"></canvas>
+
 
 </body>
 </html>
